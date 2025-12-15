@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse - Notes ShareHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Notes ShareHub</div>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="browse.html" style="color:#007bff">Browse Notes</a></li>
+            <li><a href="#" onclick="logout()" class="btn-logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center">Find & Download Notes</h2>
+        <br>
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search by title or subject..." onkeyup="loadNotes()">
+
+        <div id="notesContainer" class="grid">
+            <!-- Notes will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
